@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Sigma renderer canvas needs an explicit sized parent */
+.sigma-host {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
